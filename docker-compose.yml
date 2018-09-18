@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  appnode:
+    build: .
+    image: docker-nodejs-sampleapp
+    ports:
+      - '7000:5000'
+    command: npm start
+    volumes:
+      - .:/app
