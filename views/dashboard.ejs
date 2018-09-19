@@ -1,0 +1,59 @@
+<% include partials/header %>
+
+<div class="container">
+    <div id="dashboard">
+        <div class="profile">
+            <div class="avatar"></div>
+            <div class="profile-name">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <div class="add-product">
+            <form action="">
+                <div class="row">
+                    <div class="input-field-add-dash">
+                            <label for="produit">Votre produit</label>
+                        <input id="produit" type="produit" class="validate">
+                    
+                    </div>
+
+                    <div class="input-field-add-dash">
+                            <label for="token">Token/clef API</label>
+                        <input id="token" type="token" class="validate">
+                        
+                    </div>
+
+                    <div class="input-field-add-dash">
+                            <label for="marque">Marque</label>
+                        <input id="marque" type="marque" class="validate">
+                        
+                    </div>
+
+                    <div class="input-field-add-dash-validate">
+                        <button class="btn waves-effect waves-light" type="submit" name="action">Valider
+                            <i class="material-icons right">add</i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="list-product">
+            <ul>
+                <li>
+                    <div class="col s2 m2 element-container produit"><span>Machine à café</span></div>
+                    <div class="col s2 m2 element-container marque"><span>Krups</span></div>
+                    <div class="col s2 m2 element-container token"><span>pyE3ip7LvuEiykm7i8S2ktAuj</span></div>
+                    <div class="col s2 m2 element-container status"><span> online</span></div>
+                    <div class="col s2 m2 element-container version-software"><span>v.2.1.0</span></div>
+                    <div class="col s2 m2 element-container action"><button class="btn">action</button></div>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+<% include partials/footer %>

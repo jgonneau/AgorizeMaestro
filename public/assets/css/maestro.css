@@ -1,0 +1,136 @@
+/* ---------- HomePage ------------- */
+.aboutUs .image-container {
+  text-align: center; }
+  .aboutUs .image-container img {
+    border-radius: 50%;
+    width: 20%; }
+
+nav {
+  z-index: 999; }
+  nav .maestro-logo {
+    margin-left: 10px; }
+
+#hero-homepage {
+  margin-bottom: 20px;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  /* Inscription */ }
+  #hero-homepage #myVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -2; }
+  #hero-homepage .title-homepage {
+    position: absolute;
+    text-align: center;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 5%; }
+    @media screen and (min-width: 698px) {
+      #hero-homepage .title-homepage {
+        top: 10%;
+        margin: 0 20px; } }
+  #hero-homepage .call-to-action-home {
+    position: absolute;
+    text-align: center;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 40%; }
+    #hero-homepage .call-to-action-home .button-container .signUp {
+      margin: 10px 20px; }
+      @media screen and (min-width: 698px) {
+        #hero-homepage .call-to-action-home .button-container .signUp {
+          margin: 0 20px; } }
+    #hero-homepage .call-to-action-home .button-container .signIn {
+      margin: 10px 20px;
+      color: black; }
+      @media screen and (min-width: 698px) {
+        #hero-homepage .call-to-action-home .button-container .signIn {
+          margin: 0 20px; } }
+
+#form-container-inscription {
+  min-height: 100vh;
+  position: relative;
+  margin-top: 40px;
+  /* Connexion  */ }
+  #form-container-inscription .page-title-container {
+    text-align: center; }
+    #form-container-inscription .page-title-container h5, #form-container-inscription .page-title-container p {
+      color: #9e9e9e; }
+  #form-container-inscription form {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0; }
+
+#form-container-connexion {
+  min-height: 100vh;
+  position: relative;
+  margin-top: 40px; }
+  #form-container-connexion .page-title-container {
+    text-align: center; }
+    #form-container-connexion .page-title-container h5, #form-container-connexion .page-title-container p {
+      color: #9e9e9e; }
+  #form-container-connexion .container-left {
+    position: relative;
+    width: 100%;
+    min-height: 50vh;
+    display: inline-block;
+    vertical-align: top;
+    margin: auto; }
+    @media screen and (min-width: 768px) {
+      #form-container-connexion .container-left {
+        width: 45%; } }
+    #form-container-connexion .container-left form {
+      position: absolute;
+      top: 20%;
+      left: 0;
+      right: 0; }
+      #form-container-connexion .container-left form .forgot-password-container {
+        margin-top: 20px; }
+  #form-container-connexion .container-right {
+    position: relative;
+    width: 100%;
+    min-height: 50vh;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    margin: auto; }
+    @media screen and (min-width: 768px) {
+      #form-container-connexion .container-right {
+        width: 45%; } }
+    #form-container-connexion .container-right .container-button {
+      position: absolute;
+      top: 30%;
+      left: 0;
+      right: 0; }
+      #form-container-connexion .container-right .container-button p {
+        margin-bottom: 30px; }
+
+#dashboard .input-field-add-dash {
+  display: inline-block;
+  vertical-align: top;
+  width: 20%;
+  margin: 0 10px; }
+#dashboard .input-field-add-dash-validate {
+  display: inline-block;
+  vertical-align: bottom;
+  width: 20%;
+  margin: 0 10px; }
+#dashboard .list-product {
+  display: block;
+  width: 100%; }
+  #dashboard .list-product ul li {
+    background-color: #eceff1; }
+    #dashboard .list-product ul li .col.s2.element-container {
+      display: inline-block;
+      vertical-align: middle;
+      padding: 10px 30px;
+      text-align: center; }
+
+/*# sourceMappingURL=maestro.css.map */

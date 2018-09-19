@@ -1,11 +1,81 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
-</html>
+<% include partials/header %>
+
+<!-- Hero Area-->
+<div id="hero-homepage">
+  <video autoplay muted loop id="myVideo">
+          <source src="assets/video/home-video.mp4" type="video/mp4">
+  </video>
+  <div class="title-homepage">
+      <h1>Maestro.</h1>
+      <p>Une application qui les gouverne tous.</p>
+  </div>
+
+  <div class="call-to-action-home">
+      <div class="button-container">
+
+        
+          <a href="/connexion" class="btn waves-effect white signIn">Connexion<i class="material-icons right">person</i></a>
+          
+
+          <a href="/inscription" class="btn  teal signUp" type="submit" name="action" >inscription<i class="material-icons right">create</i></a>
+          
+
+      </div>
+  </div>
+</div>
+
+<div class="container">
+
+  <!--  -->
+
+  <!-- About US -->
+  <div class="aboutUs">
+        <div class="row">
+            <div class="col s12 m3 center-on-small-only">
+                <div class="image-container">
+                    <img src="assets/images/kraken.jpg" class="">
+                </div>
+            </div>
+            <div class="col s12 m9">
+                <h5><a href="#">Naweed SUFRANJ</a> </h5>
+                <p>Developpeur web Front End JavaScript et étudiant à l'école IPSSI en développement web/mobile</p>
+            </div>
+        </div>
+        <div class="row">
+                <div class="col s12 m3 center-on-small-only">
+                    <div class="image-container">
+                        <img src="assets/images/kraken.jpg" class="">
+                    </div>
+                </div>
+                <div class="col s12 m9">
+                    <h5><a href="#">Jean Paul GONNEAU</a> </h5>
+                    <p>Developpeur web Full Stack JavaScript et étudiant à l'école IPSSI en développement web/mobile</p>
+                </div>
+        </div>
+        <div class="row">
+                <div class="col s12 m3 center-on-small-only">
+                    <div class="image-container">
+                        <img src="assets/images/kraken.jpg" class="">
+                    </div>
+                </div>
+                <div class="col s12 m9">
+                    <h5><a href="#">Cédric CLAIRE</a> </h5>
+                    <p>Administrateur des systemes   et étudiant à l'école IPSSI en Administrateur des systemes et resaux</p>
+                </div>
+        </div>
+        <div class="row">
+            <div class="col s12 m3 center-on-small-only">
+                <div class="image-container">
+                    <img src="assets/images/kraken.jpg" class="">
+                </div>
+            </div>
+            <div class="col s12 m9">
+                <h5><a href="#">Antonio AGODOR</a> </h5>
+                <p>Administrateur des systemes et étudiant à l'école IPSSI en Administrateur des systemes et resaux</p>
+            </div>
+        </div>
+        
+  </div>
+</div>
+
+<% include partials/footer %>

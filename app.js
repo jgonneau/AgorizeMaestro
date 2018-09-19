@@ -9,6 +9,21 @@ var usersRouter = require('./routes/users');
 
 var app = express();
 
+
+indexRouter.get('/connexion', function(req, res, next) {
+  res.render('connexion', { title: 'Express' });
+});
+
+indexRouter.get('/inscription', function(req, res, next) {
+  res.render('inscription', { title: 'Express' });
+});
+
+indexRouter.get('/dashboard', function(req, res, next) {
+  res.render('dashboard', { title: 'Express' });
+});
+
+
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
