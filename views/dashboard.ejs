@@ -10,35 +10,7 @@
             </div>
         </div>
 
-        <div class="add-product">
-            <form action="">
-                <div class="row">
-                    <div class="input-field-add-dash">
-                            <label for="produit">Votre produit</label>
-                        <input id="produit" type="produit" class="validate">
-                    
-                    </div>
-
-                    <div class="input-field-add-dash">
-                            <label for="token">Token/clef API</label>
-                        <input id="token" type="token" class="validate">
-                        
-                    </div>
-
-                    <div class="input-field-add-dash">
-                            <label for="marque">Marque</label>
-                        <input id="marque" type="marque" class="validate">
-                        
-                    </div>
-
-                    <div class="input-field-add-dash-validate">
-                        <button class="btn waves-effect waves-light" type="submit" name="action">Valider
-                            <i class="material-icons right">add</i>
-                        </button>
-                    </div>
-                </div>
-            </form>
-        </div>
+        
 
         <div class="list-product">
             <ul>
@@ -53,6 +25,58 @@
             </ul>
         </div>
 
+        <div class="add-product-button">
+            <a data-target="modal" class="btn-floating btn-large waves-effect waves-light red light-blue modal-trigger"><i class="material-icons">add</i></a>
+        </div>
+
+
+            <!-- Modal Structure -->
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                <h4>Ajouter un produit</h4>
+                
+                <div class="add-product">
+                    <form class="col s12">
+                        <div class="row">
+                            <div class="input-field col s12">
+                            <input placeholder="Type de produit (aspirateur, machine à café ...)" id="produit" type="text" class="validate">
+                            <label for="produit">Produit</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="marque" placeholder="Marque du produit (SEB, Krups, Moulinex ...)" type="text" class="validate">
+                                <label for="marque">Marque</label>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="token" placeholder="Token/API-Key" type="text" class="validate">
+                                <label for="token">Token</label>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="right">
+                                    <button class=" modal-close btn waves-effect waves-red btn-flat red darken-1" type="submit" name="action">
+                                        Annuler
+                                        <i class="material-icons right">add</i>
+                                    </button>
+                                    <button class="btn waves-effect waves-light " type="submit" name="action">Ajouter
+                                        <i class="material-icons right">add</i>
+                                    </button>
+                            </div>
+                           
+                        </div>
+                    </form>
+                </div>
+
+                </div>
+                <div class="modal-footer">
+                
+                </div>
+            </div>
     </div>
 </div>
 

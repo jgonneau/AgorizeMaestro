@@ -112,25 +112,24 @@ nav {
       #form-container-connexion .container-right .container-button p {
         margin-bottom: 30px; }
 
-#dashboard .input-field-add-dash {
-  display: inline-block;
-  vertical-align: top;
-  width: 20%;
-  margin: 0 10px; }
-#dashboard .input-field-add-dash-validate {
-  display: inline-block;
-  vertical-align: bottom;
-  width: 20%;
-  margin: 0 10px; }
-#dashboard .list-product {
-  display: block;
-  width: 100%; }
-  #dashboard .list-product ul li {
-    background-color: #eceff1; }
-    #dashboard .list-product ul li .col.s2.element-container {
-      display: inline-block;
-      vertical-align: middle;
-      padding: 10px 30px;
-      text-align: center; }
+#dashboard {
+  min-height: 100vh; }
+  #dashboard .list-product {
+    display: block;
+    width: 100%; }
+    #dashboard .list-product ul li {
+      background-color: #eceff1; }
+      #dashboard .list-product ul li .col.s2.element-container {
+        display: inline-block;
+        vertical-align: middle;
+        padding: 10px 30px;
+        text-align: center; }
+
+.add-product-button {
+  box-sizing: border-box;
+  position: fixed;
+  padding: 0;
+  bottom: 20px;
+  right: 20px; }
 
 /*# sourceMappingURL=maestro.css.map */
