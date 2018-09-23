@@ -1,1 +1,7 @@
-# Sample Dockerized Node.js application
+## Project Agorize - Maestro
+
+# How to launch ?
+
+```
+docker-compose up
+```

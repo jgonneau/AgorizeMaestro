@@ -1,11 +1,17 @@
 version: '3'
 
 services:
-  appnode:
+  web:
     build: .
-    image: docker-nodejs-sampleapp
-    ports:
-      - '7000:5000'
-    command: npm start
     volumes:
       - .:/app
+    ports:
+    - '3000:3000'
+    depends_on:
+    - mongo
+
+  mongo:
+    image: mongo
+    restart: always
+    ports:
+    - '27017:27017'

@@ -1,28 +1,19 @@
 var createError = require('http-errors');
 var express = require('express');
+var router = express.Router();
+var session = require('express-session');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
+var routes = require('./src/routes');
 
 var app = express();
 
+//var mongoose = require('mongoose');
 
-indexRouter.get('/connexion', function(req, res, next) {
-  res.render('connexion', { title: 'Express' });
-});
-
-indexRouter.get('/inscription', function(req, res, next) {
-  res.render('inscription', { title: 'Express' });
-});
-
-indexRouter.get('/dashboard', function(req, res, next) {
-  res.render('dashboard', { title: 'Express' });
-});
-
-
+//DB setup
+//mongoose.connect('mongodb://mongo:27017');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -33,9 +24,15 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(session({ secret: '1578043278',resave:false,saveUninitialized:false, cookie: { maxAge: 60000 }}));
 
-app.use('/', indexRouter);
-app.use('/users', usersRouter);
+//routes
+app.get('/', routes.index);
+app.get('/connexion', routes.connexion);
+app.get('/inscription', routes.inscription);
+app.get('/dashboard', routes.dashboard);
+app.post('/registration', routes.registration);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -53,4 +50,6 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-module.exports = app;
+app.listen(3000, function(){
+  console.log('Example app listening on port 3000!');
+});

@@ -1,3 +1,13 @@
-FROM eabay/nodejs
+FROM node:argon
 
-EXPOSE 5000
+RUN mkdir /app
+WORKDIR /app
+
+COPY package.json /app
+RUN npm install
+
+COPY . /app
+
+EXPOSE 3000
+
+CMD ["npm", "start"]
