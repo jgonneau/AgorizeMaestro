@@ -8,6 +8,7 @@ var DB = mongoose.connection;
 
 	});
 
+//Schema users
 var UserSchema	= new mongoose.Schema ({
 
 		firstname: String,
@@ -18,6 +19,7 @@ var UserSchema	= new mongoose.Schema ({
 	});
 
 
+//Schema devices
 var	DeviceSchema = new mongoose.Schema({
 
 	device_title: String,

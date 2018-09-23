@@ -6,14 +6,10 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
+//recuperation des routes
 var routes = require('./src/routes');
 
 var app = express();
-
-//var mongoose = require('mongoose');
-
-//DB setup
-//mongoose.connect('mongodb://mongo:27017');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

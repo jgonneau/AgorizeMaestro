@@ -1,7 +1,9 @@
-## Project Agorize - Maestro
+# Project Agorize - Maestro
 
-# How to launch ?
+## How to launch ?
 
 ```
 docker-compose up
 ```
+
+### /!\ Warning /!\ Ceci est un prototype de projet, il pourrait manquer de fonctionnalités ou ne pas réagir comme prévu!
